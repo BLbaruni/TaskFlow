@@ -5,7 +5,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.billy.taskflow.model.User
+import com.google.firebase.firestore.auth.User
 
 
 @Dao

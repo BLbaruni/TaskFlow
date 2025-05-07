@@ -21,9 +21,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
-import com.harry.sokomart.R
+import com.billy.taskflow.R
 import com.harry.sokomart.navigation.ROUT_LOGIN
-import com.harry.sokomart.ui.theme.mytheme
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
@@ -35,14 +34,11 @@ fun SplashScreen(navController: NavController){
         delay(2000)
         navController.navigate(ROUT_LOGIN)
     }
-    Column (
-        modifier = Modifier
+    val mytheme = null
+    Column (modifier = Modifier
             .fillMaxSize()
-            .background(mytheme)
-            ,
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
-    ){
+            .back ground (mytheme) ,
+        horizontalAlignment = Alignment.CenterHorizontally, verticalArrangement = Arrangement.Center){
         Image(
             painter = painterResource(R.drawable.img_14),
             contentDescription = "",
